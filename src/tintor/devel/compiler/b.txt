@@ -1,0 +1,14 @@
+sc = Scanner.new(System.in)
+sc.nextInt.times do |cc|
+	num = sc.next
+	x = Array.new(num.size) {Array.new(210)}
+	x.each do |e, i|
+		e[num[0...i].to_i % 210]++
+		(1...i).each do |j|
+			a = num[j...i].to_i
+			x[j].each do |b, c|
+				e[(b + a) % 210] += c
+				e[(b - a) % 210] += c
+
+	ugly(b) = [2,3,5,7].any {|p| b%p == 0}
+	printf "Case #%s: %s\n", cc+1, x[num.size-1].sum {|b, c| ugly(b.abs) ? c : 0}

@@ -1,0 +1,104 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+# java.lang.OutOfMemoryError: requested 8192000 bytes for GrET in C:\BUILD_AREA\jdk6_10\hotspot\src\share\vm\utilities\growableArray.cpp. Out of swap space?
+#
+#  Internal Error (allocation.inline.hpp:42), pid=840, tid=2552
+#  Error: GrET in C:\BUILD_AREA\jdk6_10\hotspot\src\share\vm\utilities\growableArray.cpp
+#
+# Java VM: Java HotSpot(TM) Client VM (11.0-b11 mixed mode windows-x86)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x2e0b4000):  VMThread [stack: 0x2e140000,0x2e190000] [id=2552]
+
+Stack: [0x2e140000,0x2e190000]
+[error occurred during error reporting (printing stack bounds), id 0x80000001]
+
+VM_Operation (0x0090f810): GenCollectForAllocation, mode: safepoint, requested by thread 0x003a6c00
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x2e0d5000 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=3056, stack(0x2e320000,0x2e370000)]
+  0x2e0cec00 JavaThread "CompilerThread0" daemon [_thread_blocked, id=3856, stack(0x2e2d0000,0x2e320000)]
+  0x2e0cd400 JavaThread "Attach Listener" daemon [_thread_blocked, id=1060, stack(0x2e280000,0x2e2d0000)]
+  0x2e0cc000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=1056, stack(0x2e230000,0x2e280000)]
+  0x2e0bc400 JavaThread "Finalizer" daemon [_thread_blocked, id=2652, stack(0x2e1e0000,0x2e230000)]
+  0x2e0b7800 JavaThread "Reference Handler" daemon [_thread_blocked, id=2984, stack(0x2e190000,0x2e1e0000)]
+  0x003a6c00 JavaThread "main" [_thread_blocked, id=1032, stack(0x008c0000,0x00910000)]
+
+Other Threads:
+=>0x2e0b4000 VMThread [stack: 0x2e140000,0x2e190000] [id=2552]
+  0x2e0ea000 WatcherThread [stack: 0x2e480000,0x2e4d0000] [id=2056]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x003a5cb8] UNKNOWN - owner thread: 0x2e0b4000
+[0x003a6118] UNKNOWN - owner thread: 0x003a6c00
+
+Heap
+ def new generation   total 7552K, used 831K [0x02990000, 0x031c0000, 0x057b0000)
+  eden space 6720K,   0% used [0x02990000, 0x02990000, 0x03020000)
+  from space 832K,  99% used [0x030f0000, 0x031bfff8, 0x031c0000)
+  to   space 832K,   0% used [0x03020000, 0x03020000, 0x030f0000)
+ tenured generation   total 100524K, used 100493K [0x057b0000, 0x0b9db000, 0x28190000)
+   the space 100524K,  99% used [0x057b0000, 0x0b9d3618, 0x0b9d3800, 0x0b9db000)
+ compacting perm gen  total 12288K, used 2011K [0x28190000, 0x28d90000, 0x2c190000)
+   the space 12288K,  16% used [0x28190000, 0x28386c80, 0x28386e00, 0x28d90000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Program Files\Java\jdk1.6.0_10\bin\javaw.exe
+0x7c900000 - 0x7c9af000 	C:\WINDOWS\system32\ntdll.dll
+0x7c800000 - 0x7c8f6000 	C:\WINDOWS\system32\kernel32.dll
+0x77dd0000 - 0x77e6b000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77e70000 - 0x77f02000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77fe0000 - 0x77ff1000 	C:\WINDOWS\system32\Secur32.dll
+0x7e410000 - 0x7e4a1000 	C:\WINDOWS\system32\USER32.dll
+0x77f10000 - 0x77f59000 	C:\WINDOWS\system32\GDI32.dll
+0x76390000 - 0x763ad000 	C:\WINDOWS\system32\IMM32.DLL
+0x629c0000 - 0x629c9000 	C:\WINDOWS\system32\LPK.DLL
+0x74d90000 - 0x74dfb000 	C:\WINDOWS\system32\USP10.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jdk1.6.0_10\jre\bin\msvcr71.dll
+0x6d8a0000 - 0x6daf6000 	C:\Program Files\Java\jdk1.6.0_10\jre\bin\client\jvm.dll
+0x76b40000 - 0x76b6d000 	C:\WINDOWS\system32\WINMM.dll
+0x6d340000 - 0x6d348000 	C:\Program Files\Java\jdk1.6.0_10\jre\bin\hpi.dll
+0x76bf0000 - 0x76bfb000 	C:\WINDOWS\system32\PSAPI.DLL
+0x6d850000 - 0x6d85c000 	C:\Program Files\Java\jdk1.6.0_10\jre\bin\verify.dll
+0x6d3e0000 - 0x6d3ff000 	C:\Program Files\Java\jdk1.6.0_10\jre\bin\java.dll
+0x6d890000 - 0x6d89f000 	C:\Program Files\Java\jdk1.6.0_10\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Xprof -Xmx600M -Dfile.encoding=Cp1252 
+java_command: tintor.devel.r_tree.Main
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=c:\Program Files\Java\jdk1.6.0_03
+CLASSPATH=c:\Program Files\groovy-1.0\lib\groovy-1.0.jar;c:\java lib\mysql-connector-java-5.0.6\mysql-connector-java-5.0.6-bin.jar
+PATH=c:/Program Files/Java/jdk1.6.0_10/jre/bin/client;c:/Program Files/Java/jdk1.6.0_10/jre/bin;c:\Program Files\Java\jdk1.6.0_10\jre\bin;c:\program files\svn-1.4.6\bin;c:\Program Files;c:\Program Files\gs\gs8.54\lib;c:\Program Files\Java\jdk1.6.0_10\bin;c:\progra~1\jad;c:\progra~1\jruby-0.92\bin;c:\progra~1\groovy-1.0\bin;c:\Progra~1\Ghostscript\gs8.54\bin;c:\mingw\bin;c:\dmc\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Progra~1\ATI Technologies\ATI Control Panel;C:\Progra~1\Mozart\bin;C:\Progra~1\OpenSSH\bin;c:\Progra~1\MySQL Server 5.0\bin;C:\Program Files\Perforce;C:\Program Files\GTK 2.0\bin;C:\PROGRA~1\ACTIVE~1.2\BIN;C:\Program Files\WinSCP3\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;c:\dm;C:\Program Files\Nmap
+USERNAME=marko
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 36 Stepping 2, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 3
+
+CPU:total 1 (1 cores per cpu, 1 threads per core) family 15 model 36 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, mmxext, 3dnow, 3dnowext
+
+Memory: 4k page, physical 1046704k(28680k free), swap 945092k(13096k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.0-b11) for windows-x86 JRE (1.6.0_10-beta-b14), built on Mar 14 2008 14:00:49 by "java_re" with MS VC++ 7.1
+
+time: Sat Jul 26 22:35:24 2008
+elapsed time: 93 seconds
+

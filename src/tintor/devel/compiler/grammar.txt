@@ -1,0 +1,22 @@
+code := line+
+!line := (func / assign) separator
+!func := def space symbol space list separator begin code separator ';end;'
+list := symbol {',' symbol}
+!assign := [symbol '='] expr
+!expr := expr2 {(greater / less / equals) expr2}
+!expr2 := expr3 {(plus / minus) expr3}
+!expr3 := unary {star unary}
+!unary := [minus] atom
+!atom := int / '(' expr ')' / if / call
+!call := name ['(' expr {',' expr} ')']
+if := 'if(' expr comma expr comma expr ')'
+
+@symbol := 
+@int := digit+
+plus := 
+minus := 
+star := 
+greater := 
+equals := 
+less := 
+comma := ','

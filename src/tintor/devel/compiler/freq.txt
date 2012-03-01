@@ -1,0 +1,3 @@
+freq = Hash.new(0)
+cin.scan(/\w+/) do {|w| freq[w]++}
+freq.keys.sort.each do {|w| printf "%s -- %s\n", w, freq[w]}

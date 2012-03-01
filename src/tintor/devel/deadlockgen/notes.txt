@@ -1,0 +1,18 @@
+// new simple algo (7/11 SPEED)
+3x4 = 3^12 3s
+3x5 = 3^15 42s
+4x4 = 3^16 (107s)
+3x6 = 3^18 
+4x5 = 3^20 (20h)
+
+// 3x5
+ 39.8%   601  +     1    tintor.devel.deadlockgen.Map.isDeadlock
+ 30.6%   463  +     0    tintor.devel.deadlockgen.DeadlockGenerator.main
+ 11.6%   175  +     0    tintor.devel.deadlockgen.Patterns.matches
+  7.7%     9  +   108    tintor.devel.deadlockgen.common.CellGroup.<init>
+
+// 4x4
+ 54.3%  1848  +     0    tintor.devel.deadlockgen.DeadlockGenerator.main
+ 28.3%   965  +     0    tintor.devel.deadlockgen.Map.isDeadlock
+  8.7%   296  +     1    tintor.devel.deadlockgen.Patterns.matches
+  3.9%     8  +   125    tintor.devel.deadlockgen.common.CellGroup.<init>

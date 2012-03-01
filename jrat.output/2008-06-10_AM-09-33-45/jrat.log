@@ -1,0 +1,28 @@
+JRat:INFO (јун/10 09:33:45,437) (main) RuntimeContextImpl - logfile created
+JRat:INFO (јун/10 09:33:45,437) (main) RuntimeContextImpl - Running JRat version 1-beta1 - built on 20070911
+JRat:INFO (јун/10 09:33:45,437) (main) CacheMethodHandlerFactory - startup
+JRat:INFO (јун/10 09:33:45,437) (main) ConfigMethodHandlerFactory - startup
+JRat:INFO (јун/10 09:33:45,437) (main) ShutdownRegistry - registerShutdownListener Tree Handler Factory
+JRat:INFO (јун/10 09:33:45,453) (main) CommandletRegistry - register org.shiftone.jrat.provider.tree.command.ResetCommandlet@193722c
+JRat:INFO (јун/10 09:33:45,453) (main) CommandletRegistry - register org.shiftone.jrat.provider.tree.command.WriteOutputCommandlet@157fb52
+JRat:INFO (јун/10 09:33:45,453) (main) CommandletRegistry - register org.shiftone.jrat.provider.tree.command.DumpOutputCommandlet@1a52fdf
+JRat:INFO (јун/10 09:34:35,953) (JRat-Shutdown) ShutdownRegistry - shutting down...[Transformer[ASM], FileOutputRegistry[Writer[memory.csv], PrintWriter[jrat.log]], Memory Monitor, Tree Handler Factory]
+JRat:INFO (јун/10 09:34:35,953) (JRat-Shutdown) ShutdownRegistry - shutting down Tree Handler Factory...
+JRat:INFO (јун/10 09:34:35,953) (JRat-Shutdown) TreeMethodHandlerFactory - shutdown...
+JRat:INFO (јун/10 09:34:35,953) (JRat-Shutdown) TreeMethodHandlerFactory - writeOutputFile...
+JRat:INFO (јун/10 09:34:36,296) (JRat-Shutdown) FileOutputFactory - createOutputStream C:\workspace3\Meta\jrat.output\2008-06-10_AM-09-33-45\my_code_tree.jrat
+JRat:INFO (јун/10 09:34:36,296) (JRat-Shutdown) FileOutputFactory - createOutputStream C:\workspace3\Meta\jrat.output\2008-06-10_AM-09-33-45\my_code_tree.jrat
+JRat:INFO (јун/10 09:34:36,296) (JRat-Shutdown) FileOutputRegistry - add OutputStream[my_code_tree.jrat]
+JRat:INFO (јун/10 09:34:36,750) (JRat-Shutdown) FileOutputOutputStream - closing
+JRat:INFO (јун/10 09:34:36,750) (JRat-Shutdown) FileOutputRegistry - remove OutputStream[my_code_tree.jrat]
+JRat:INFO (јун/10 09:34:36,750) (JRat-Shutdown) TreeMethodHandlerFactory - shutdown complete
+JRat:INFO (јун/10 09:34:36,750) (JRat-Shutdown) ShutdownRegistry - shutdown Tree Handler Factory complete.
+JRat:INFO (јун/10 09:34:36,750) (JRat-Shutdown) ShutdownRegistry - shutting down Memory Monitor...
+JRat:INFO (јун/10 09:34:37,734) (Memory Ticker) FileOutputWriter - closing
+JRat:INFO (јун/10 09:34:37,734) (Memory Ticker) FileOutputRegistry - remove Writer[memory.csv]
+JRat:INFO (јун/10 09:34:37,765) (JRat-Shutdown) ShutdownRegistry - shutdown Memory Monitor complete.
+JRat:INFO (јун/10 09:34:37,765) (JRat-Shutdown) ShutdownRegistry - shutting down FileOutputRegistry[PrintWriter[jrat.log]]...
+JRat:INFO (јун/10 09:34:37,765) (JRat-Shutdown) FileOutputRegistry - closeFileOutputs [PrintWriter[jrat.log]]
+JRat:INFO (јун/10 09:34:37,765) (JRat-Shutdown) FileOutputRegistry - closing : PrintWriter[jrat.log]
+JRat:INFO (јун/10 09:34:37,765) (JRat-Shutdown) FileOutputPrintWriter - closing
+JRat:INFO (јун/10 09:34:37,765) (JRat-Shutdown) FileOutputRegistry - remove PrintWriter[jrat.log]

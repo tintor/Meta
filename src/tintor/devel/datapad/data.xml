@@ -1,0 +1,15 @@
+<base>
+	<folder name="dvor">
+		<property name="id">2</property>
+		
+		<folder name="auto">
+			<property name="model">Mercedes A5</property>
+			<property name="image">mercedes.jpg</property>
+			<property name="production date">2007-11-05</property>
+		</folder>
+	</folder>
+	
+	<folder name="beograd">
+		<property name="id">3</property>
+	</folder>
+</base>

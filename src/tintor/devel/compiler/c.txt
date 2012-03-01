@@ -1,0 +1,29 @@
+mm = 1000000007
+
+sc = Scanner.new(System.in)
+sc.nextInt.times do |cc|
+	n = sc.nextInt
+	m = sc.nextInt
+	x = sc.nextInt
+	y = sc.nextInt
+	z = sc.nextInt
+	h = Array.new(m) {sc.nextInt}
+
+	a = Array.new(n)
+	n.times do |i|
+		a[i] = h[i % m]
+		h[i % m] = (x * h[i % m] + y * (i+1)) % z
+
+	count = 0
+	a.each do |e|
+		s = (1 + sum(index(e))) % mm
+		add(index(e), s)
+		count = (count + s) % mm
+
+	printf "Case #%s: %s\n", cc+1, count
+
+def add(a, c)
+	...
+
+def sum(a)
+	...

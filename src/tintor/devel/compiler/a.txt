@@ -1,0 +1,6 @@
+sc = Scanner.new(System.in)
+sc.nextInt.times do |cc|
+	p = sc.nextInt
+	k = sc.nextInt
+	freq = Array.new(sc.nextInt) {sc.nextLong}.sort!.reverse!
+	printf "Case #%s: %s\n", cc+1, freq.sum {|e,i| e * (1 + i // k)}

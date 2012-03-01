@@ -1,0 +1,35 @@
+(class-body
+	(func main (args)
+		(code
+			(call print (call gcd (int 96) (int 1024)))			
+		)
+	)
+	(func gdc (args a b)
+		(code
+			(if
+				(>= (name a) (name b))
+				(if
+					(> (name b) (int 0))
+					(call gcd (% (call a) (call b)) (call a))
+					(call a)
+				)
+				(call gcd (call b) (call a))
+			)
+		)
+	)
+)
+
+main
+	print gdc(96, 1024)
+
+gcd(a, b)
+	if a >= b
+		if b > 0
+			gcd a%b, a
+		else
+			a
+	else
+		gdc b, a
+
+class-body := func+
+func := name

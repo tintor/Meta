@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="WINDOWS-1251" standalone="no"?>
+<jardesc>
+    <jar path="C:/x/datapad.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/Meta/src/tintor/devel/datapad/deploy.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=Meta/src&lt;tintor.devel.datapad{Datapad.java[Datapad" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="true">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/Meta/src/tintor/devel/datapad/find_next.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/flat.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/title.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/new_folder.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/template.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/dot.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/add.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/write.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/hierarchical.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/undo.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/library.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/delete.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/paste.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/saveas.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/property.gif"/>
+        <javaElement handleIdentifier="=Meta/src&lt;tintor.devel.datapad{Datapad.java"/>
+        <file path="/Meta/src/tintor/devel/datapad/open_folder.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/refresh.gif"/>
+        <javaElement handleIdentifier="=Meta/src&lt;tintor.devel.datapad{AbstractCommand.java"/>
+        <file path="/Meta/src/tintor/devel/datapad/find.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/new_file.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/errorwarning.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/new_document.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/bullets.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/redo.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/new2.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/stop.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/edit.gif"/>
+        <javaElement handleIdentifier="=Meta/src&lt;tintor.devel.datapad{DataTree.java"/>
+        <file path="/Meta/src/tintor/devel/datapad/copy.gif"/>
+        <javaElement handleIdentifier="=Meta/src&lt;tintor.devel.datapad{SWTUtil.java"/>
+        <file path="/Meta/src/tintor/devel/datapad/cut.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/save.gif"/>
+        <file path="/Meta/src/tintor/devel/datapad/refresh_nav.gif"/>
+    </selectedElements>
+    <fatjar builder="org.eclipse.jdt.ui.plain_jar_builder" launchConfig=""/>
+</jardesc>
